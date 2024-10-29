@@ -30,3 +30,5 @@ Este proyecto consiste en una aplicación desarrollada en MIT App Inventor para 
 **Comunicación con el Robot:** Una vez que se ha configurado el cubo, la aplicación envía los datos al Arduino a través de Bluetooth.
 
 **Resolución del Cubo:** El Arduino, equipado con servomotores, ejecuta una secuencia de movimientos para resolver el cubo según la configuración recibida.
+![image](https://github.com/user-attachments/assets/0a5a45a2-cf23-4e8a-bb00-610a2652e635)
+
