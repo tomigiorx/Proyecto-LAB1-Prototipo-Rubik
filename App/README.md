@@ -1,4 +1,5 @@
 ## Tutorial de Uso de la App de MIT App Inventor
+![Imagen de WhatsApp 2024-10-29 a las 17 21 18_2454181d](https://github.com/user-attachments/assets/bbf5f0b5-73d8-4eff-8627-dbd69102c5bd)
 
 ### Paso 1: Conectar la Aplicación con el Arduino
 
