@@ -28,7 +28,8 @@
    - Una vez que el cubo esté configurado en la aplicación, presiona el botón **Enviar** para transmitir los datos al Arduino a través de la conexión Bluetooth.
    - La aplicación enviará la disposición de colores al Arduino, quien interpretará estos datos para planificar la resolución del cubo.
 
-![image](https://github.com/user-attachments/assets/0141a3e8-0512-4ed7-8532-58ccc436af2f)
+![image](https://github.com/user-attachments/assets/0141a3e8-0512-4ed7-8532-58ccc436af2f) ![image](https://github.com/user-attachments/assets/a0884a2f-1309-4ad4-a19f-eaf47a34020c)
+
 
 
 ### Paso 4: Ejecución de la Resolución del Cubo por el Robot
