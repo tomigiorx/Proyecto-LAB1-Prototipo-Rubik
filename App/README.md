@@ -1,5 +1,4 @@
 ## Tutorial de Uso de la App de MIT App Inventor
-![Imagen de WhatsApp 2024-10-29 a las 17 21 18_2454181d](https://github.com/user-attachments/assets/bbf5f0b5-73d8-4eff-8627-dbd69102c5bd)
 
 ### Paso 1: Conectar la Aplicación con el Arduino
 
@@ -7,7 +6,6 @@
 2. **Conectar desde la Aplicación**:
    - Abre la aplicación en tu dispositivo móvil.
    - En la pantalla principal, presiona el botón **Conectar**.
-   - Selecciona el módulo Bluetooth en la lista para establecer la conexión con el Arduino.
 
 ### Paso 2: Configurar el Cubo Rubik en la Aplicación
 
@@ -29,6 +27,9 @@
 2. **Enviar Datos al Arduino**:
    - Una vez que el cubo esté configurado en la aplicación, presiona el botón **Enviar** para transmitir los datos al Arduino a través de la conexión Bluetooth.
    - La aplicación enviará la disposición de colores al Arduino, quien interpretará estos datos para planificar la resolución del cubo.
+
+![image](https://github.com/user-attachments/assets/0141a3e8-0512-4ed7-8532-58ccc436af2f)
+
 
 ### Paso 4: Ejecución de la Resolución del Cubo por el Robot
 
