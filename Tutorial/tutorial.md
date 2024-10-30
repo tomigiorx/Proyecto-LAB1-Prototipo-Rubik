@@ -22,27 +22,27 @@ Este robot utiliza un Arduino Uno, servomotores, un módulo Bluetooth y una apli
 ### Parte 1: Montaje físico del robot
 
 1. **Preparación del cubo Rubik**
-   - Asegúrate de que el cubo pueda girar libremente en todas las caras. Coloca el cubo en una base firme que permita los giros y asegúrate de que la superficie sea estable para evitar movimientos durante el funcionamiento del robot.
+   - Asegurarse de que el cubo pueda girar libremente en todas las caras. Colocar el cubo en una base firme que permita los giros y asegurarse de que la superficie sea estable para evitar movimientos durante el funcionamiento del robot.
 
 2. **Instalación de los servomotores**
-   - **Servo 1 (Cara del cubo)**: Este servo estará encargado de rotar una cara del cubo. Conéctalo de manera que pueda girar 90° en ambas direcciones y mueva la cara del cubo adecuadamente.
-   - **Servo 2 (Base del cubo)**: Este servo girará la base del cubo para permitir movimientos en distintas orientaciones. Colócalo en la parte inferior y asegúrate de que pueda girar 90° en ambas direcciones.
+   - **Servo 1 (Cara del cubo)**: este servo estará encargado de rotar una cara del cubo. Conectar de manera que pueda girar 90° en ambas direcciones y mueva la cara del cubo adecuadamente.
+   - **Servo 2 (Base del cubo)**: este servo girará la base del cubo para permitir movimientos en distintas orientaciones. Colocar en la parte inferior y asegúrate de que pueda girar 90° en ambas direcciones.
 
 3. **Conexión de los capacitores**
    - Los capacitores se usan para estabilizar la corriente que reciben los servos, lo cual evita que los picos de corriente afecten la estabilidad de todo el sistema.
-   - Coloca cada capacitor entre el pin de alimentación (+) y el de tierra (GND) de cada servomotor.
+   - Colocar cada capacitor entre el pin de alimentación (+) y el de tierra (GND) de cada servomotor.
 
 4. **Conexión del módulo Bluetooth**
-   - Conecta el módulo Bluetooth a la protoboard y realiza las conexiones al Arduino:
+   - Conectar el módulo Bluetooth a la protoboard y realizar las conexiones al Arduino:
      - **VCC** del módulo Bluetooth al pin **5V** del Arduino.
      - **GND** del módulo Bluetooth al **GND** del Arduino.
      - **RX** del módulo al pin **TX** del Arduino.
      - **TX** del módulo al pin **RX** del Arduino.
 
 5. **Conexión de los servomotores al Arduino**
-   - **Servo 1**: Conecta el cable de señal al pin digital **3** del Arduino.
-   - **Servo 2**: Conecta el cable de señal al pin digital **4** del Arduino.
-   - Conecta los pines de alimentación de ambos servos al pin **5V** del Arduino y los pines de tierra al **GND**.
+   - **Servo 1**: conectar el cable de señal al pin digital **3** del Arduino.
+   - **Servo 2**: conectar el cable de señal al pin digital **4** del Arduino.
+   - Conectar los pines de alimentación de ambos servos al pin **5V** del Arduino y los pines de tierra al **GND**.
 
 ---
 
@@ -50,33 +50,33 @@ Este robot utiliza un Arduino Uno, servomotores, un módulo Bluetooth y una apli
 
 1. **Configuración del código para controlar los servos y la conexión Bluetooth**
 
-   Abre el IDE de Arduino y copia el código brindado en la carpeta "Arduino/codigo_c++".
+   Abrir el IDE de Arduino y copiar el código brindado en la carpeta "Arduino/codigo_c++".
 ---
 
 ### Parte 3: Creación de la aplicación en MIT App Inventor
 
 1. **Diseño de la interfaz**
    - **Interfaz del cubo Rubik**:
-     - Crea seis áreas en la app, una por cada cara del cubo. Cada cara se compondrá de **9 botones**, que representarán los cuadrados del cubo.
+     - Crear seis áreas en la app, una por cada cara del cubo. Cada cara se compondrá de **9 botones**, que representarán los cuadrados del cubo.
      - Estos botones cambiarán de color según lo que elija el usuario.
    
    - **Selector de colores**:
-     - Agrega seis botones para seleccionar colores (rojo, verde, azul, amarillo, naranja, blanco).
-     - Cuando el usuario seleccione un color, guárdalo en una variable para cambiar el color de los botones de la cara del cubo.
+     - Agregar seis botones para seleccionar colores (rojo, verde, azul, amarillo, naranja, blanco).
+     - Cuando el usuario seleccione un color, guardar en una variable para cambiar el color de los botones de la cara del cubo.
 
    - **Botón para enviar disposición**:
-     - Añade un botón que enviará la disposición completa al Arduino. Este botón convertirá la disposición en una cadena de texto para enviarla a través de Bluetooth.
+     - Añadir un botón que enviará la disposición completa al Arduino. Este botón convertirá la disposición en una cadena de texto para enviarla a través de Bluetooth.
 
 2. **Configuración de comportamiento en App Inventor**
    - **Cambio de color de los botones del cubo**:
-     - Usa el bloque de eventos `Button.Click` para cambiar el color de cada botón. Al hacer clic en un botón, cambia el color del botón al color seleccionado y guarda el color en una lista `dispoCubo`.
+     - Usar el bloque de eventos `Button.Click` para cambiar el color de cada botón. Al hacer clic en un botón, cambia el color del botón al color seleccionado y guarda el color en una lista `dispCubo`.
 
 3. **Conexión Bluetooth**
-   - En el componente `BluetoothClient`, utiliza el bloque `BluetoothClient.Connect` y coloca la dirección MAC del módulo Bluetooth para conectar el dispositivo.
-   - Verifica la conexión usando el bloque `BluetoothClient.IsConnected`.
+   - En el componente `BluetoothClient`, utilizar el bloque `BluetoothClient.Connect` y colocar la dirección MAC del módulo Bluetooth para conectar el dispositivo.
+   - Verificar la conexión usando el bloque `BluetoothClient.IsConnected`.
 
 4. **Envío de datos a Arduino**
-   - Al presionar el botón de envío, convierte la lista `dispoCubo` en una cadena de texto usando `list to csv row` y usa `BluetoothClient.SendText` para enviar el texto al Arduino.
+   - Al presionar el botón de envío, convertir la lista `dispCubo` en una cadena de texto usando `list to csv row` y usa `BluetoothClient.SendText` para enviar el texto al Arduino.
 
 ---
 
