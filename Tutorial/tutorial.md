@@ -1,6 +1,6 @@
 ---
 
-## Tutorial para construir un robot que resuelve un cubo Rubik 3x3x3
+## Tutorial para construir el Logic-3; un robot que resuelve un cubo Rubik 3x3x3
 
 ### Descripción general
 Este robot utiliza un Arduino Uno, servomotores, un módulo Bluetooth y una aplicación móvil para resolver un cubo Rubik. A través de la aplicación, el usuario ingresará manualmente la disposición de colores en el cubo, enviando esta disposición al Arduino para que el robot ejecute movimientos y resuelva el cubo.
