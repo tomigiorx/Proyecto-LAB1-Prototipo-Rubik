@@ -8,14 +8,14 @@
 
 ### Pasos para armar el circuito
 1. **Conexión de energía en la protoboard:**
-   - Conecta el pin **GND** del Arduino a la línea de **tierra** (negativa) de la protoboard.
-   - Conecta el pin **5V** del Arduino a la línea de **alimentación positiva** de la protoboard.
+   - Conectar el pin **GND** del Arduino a la línea de **tierra** (negativa) de la protoboard.
+   - Conectar el pin **5V** del Arduino a la línea de **alimentación positiva** de la protoboard.
    
 ![image](https://github.com/user-attachments/assets/fbde1871-88b7-41ce-b500-045353d37471)
 
 2. **Alimentación de los servomotores:**
-   - Conecta el cable **rojo** de ambos servos a la línea de **alimentación positiva** de la protoboard.
-   - Conecta el cable **negro** o marrón de ambos servos a la línea de **tierra** de la protoboard.
+   - Conectar el cable **rojo** de ambos servos a la línea de **alimentación positiva** de la protoboard.
+   - Conectar el cable **negro** o marrón de ambos servos a la línea de **tierra** de la protoboard.
    
 ![image](https://github.com/user-attachments/assets/30602292-89cf-48ec-92ad-d2fa2ee98c70)
 
