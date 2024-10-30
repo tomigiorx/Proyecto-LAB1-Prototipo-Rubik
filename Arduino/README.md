@@ -19,7 +19,7 @@
 ### 5. Compila tu Código
 - Para verificar que el código no contenga ningún erorr, hacer clic en el icono de **Verificar** en la parte superior izquierda de la ventana del IDE.
 
-![image](https://github.com/user-attachments/assets/c9e3d440-e6ba-46f4-b806-029ddd5b3281)
+![image](https://github.com/user-attachments/assets/a845ea1b-1360-4da4-8933-816bf6be6fa6)
 
 ### 6. Subir el código a la placa
 - Una vez compilado sin errores, haz clic en el botón **Subir** (ícono de flecha apuntando a la derecha).
