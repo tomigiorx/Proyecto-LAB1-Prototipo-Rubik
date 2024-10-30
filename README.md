@@ -4,13 +4,13 @@ Este proyecto consiste en una aplicación desarrollada en MIT App Inventor para 
 ![image](https://github.com/user-attachments/assets/0a5a45a2-cf23-4e8a-bb00-610a2652e635)
 
 ## Características
-* **Interfaz de Usuario en MIT App Inventor:** La aplicación incluye una interfaz visual donde el usuario puede seleccionar los colores de cada cara del cubo Rubik. Cada cara del cubo se muestra en la pantalla como una cuadrícula de 3x3, permitiendo al usuario tocar cada cuadrado y asignarle un color.
+* **Interfaz de usuario en MIT App Inventor:** la aplicación incluye una interfaz visual donde el usuario puede seleccionar los colores de cada cara del cubo Rubik. Cada cara del cubo se muestra en la pantalla como una cuadrícula de 3x3, permitiendo al usuario tocar cada cuadrado y asignarle un color.
 
-* **Simulación Gráfica de la Configuración del Cubo:** La aplicación muestra los colores ingresados en una representación visual del cubo. Esta vista permite verificar que los colores ingresados coincidan con la configuración real del cubo antes de iniciar la resolución.
+* **Simulación gráfica de la configuración del cubo:** la aplicación muestra los colores ingresados en una representación visual del cubo. Esta vista permite verificar que los colores ingresados coincidan con la configuración real del cubo antes de iniciar la resolución.
 
-* **Control de Robot a través de Arduino:** El robot se construye con servomotores y un Arduino que recibe las instrucciones desde la aplicación.
+* **Control de robot a través de Arduino:** el robot se construye con servomotores y un Arduino que recibe las instrucciones desde la aplicación.
 
-## Componentes Utilizados
+## Componentes utilizados
 ### MIT App Inventor:
 
 * Diseño de la interfaz de usuario para ingresar los colores del cubo.
@@ -19,16 +19,16 @@ Este proyecto consiste en una aplicación desarrollada en MIT App Inventor para 
   
 ### Arduino:
 
-* **Arduino Uno:** Controlador principal que recibe las instrucciones de movimiento.
-* **Módulo Bluetooth:** Permite la comunicación inalámbrica entre el Arduino y la aplicación en MIT App Inventor.
-* **Servomotores de 12 kg:** Realizan los movimientos físicos del cubo Rubik.
-* **Capacitores y Protoboard:** Soporte y estabilidad para los servomotores.
+* **Arduino Uno:** controlador principal que recibe las instrucciones de movimiento.
+* **Módulo Bluetooth:** permite la comunicación inalámbrica entre el Arduino y la aplicación en MIT App Inventor.
+* **Servomotores de 12 kg:** realizan los movimientos físicos del cubo Rubik.
+* **Capacitores y Protoboard:** soporte y estabilidad para los servomotores.
 
-## Funcionamiento del Proyecto
-**Ingreso de Colores:** El usuario selecciona el color de cada cuadrado en la aplicación para establecer la configuración inicial del cubo Rubik.
+## Funcionamiento del proyecto
+**Ingreso de colores:** el usuario selecciona el color de cada cuadrado en la aplicación para establecer la configuración inicial del cubo Rubik.
 
-**Dibujo de la Configuración:** La aplicación utiliza bloques de código optimizados para dibujar cada cara del cubo en la pantalla, calculando las posiciones de cada cuadrado con un sistema de bucles y desplazamientos dinámicos.
+**Dibujo de la configuración:** la aplicación utiliza bloques de código optimizados para dibujar cada cara del cubo en la pantalla, calculando las posiciones de cada cuadrado con un sistema de bucles y desplazamientos dinámicos.
 
-**Comunicación con el Robot:** Una vez que se ha configurado el cubo, la aplicación envía los datos al Arduino a través de Bluetooth.
+**Comunicación con el robot:** una vez que se ha configurado el cubo, la aplicación envía los datos al Arduino a través de Bluetooth.
 
-**Resolución del Cubo:** El Arduino, equipado con servomotores, ejecuta una secuencia de movimientos para resolver el cubo según la configuración recibida.
+**Resolución del cubo:** el Arduino, equipado con servomotores, ejecuta una secuencia de movimientos para resolver el cubo según la configuración recibida.
