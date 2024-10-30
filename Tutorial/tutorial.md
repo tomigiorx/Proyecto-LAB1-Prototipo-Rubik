@@ -15,7 +15,7 @@ Este robot utiliza un Arduino Uno, servomotores, un módulo Bluetooth y una apli
 - **Protoboard** – para realizar las conexiones.
 - **Módulo Bluetooth HC-05 o HC-06** – para comunicar la aplicación con el Arduino.
 - **Cubo Rubik 3x3x3** – el objeto a resolver.
-- **Cables Jumper** – cables de conexión para realizar las conexiones en la protoboard.
+- **Cables Jumper Macho-Hembra y Macho-Macho** – cables de conexión para realizar las conexiones en la protoboard.
 
 ---
 
@@ -40,8 +40,8 @@ Este robot utiliza un Arduino Uno, servomotores, un módulo Bluetooth y una apli
      - **TX** del módulo al pin **RX** del Arduino.
 
 5. **Conexión de los servomotores al Arduino**
-   - **Servo 1**: Conecta el cable de señal al pin digital **9** del Arduino.
-   - **Servo 2**: Conecta el cable de señal al pin digital **10** del Arduino.
+   - **Servo 1**: Conecta el cable de señal al pin digital **3** del Arduino.
+   - **Servo 2**: Conecta el cable de señal al pin digital **4** del Arduino.
    - Conecta los pines de alimentación de ambos servos al pin **5V** del Arduino y los pines de tierra al **GND**.
 
 ---
