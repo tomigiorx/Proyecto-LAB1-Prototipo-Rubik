@@ -1,1 +1,33 @@
+#include <SoftwareSerial.h>
 
+SoftwareSerial btSerial(0, 1); // RX, TX si usas SoftwareSerial
+
+void setup() {
+    Serial.begin(9600); // Inicia la consola Serial
+    btSerial.begin(9600); // Inicia el módulo Bluetooth
+}
+
+void loop() {
+    if (btSerial.available()) {
+        String data = btSerial.readStringUntil('\n'); // Lee hasta un salto de línea
+        Serial.println("Datos recibidos: " + data);
+        
+        String colors[54];
+        int index = 0;
+
+        // Separar los colores
+        int lastIndex = 0;
+        for (int i = 0; i < data.length(); i++) {
+            if (data.charAt(i) == ',') {
+                colors[index++] = data.substring(lastIndex, i);
+                lastIndex = i + 1;
+            }
+        }
+        colors[index] = data.substring(lastIndex); // Agrega el último color
+
+        Serial.println("Colores separados:");
+        for (int j = 0; j <= index; j++) {
+            Serial.println(colors[j]); // Imprimir cada color separado
+        }
+    }
+}
