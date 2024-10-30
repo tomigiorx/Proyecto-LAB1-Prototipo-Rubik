@@ -1,4 +1,4 @@
-##Guía para construir el circuito
+#Guía para construir el circuito
 
 ### Materiales necesarios
 1. **Arduino UNO**
