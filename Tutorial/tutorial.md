@@ -1,6 +1,6 @@
 ---
 
-## Guía completa para construir un robot que resuelve un cubo Rubik 3x3x3
+## Tutorial para construir un robot que resuelve un cubo Rubik 3x3x3
 
 ### Descripción general
 Este robot utiliza un Arduino Uno, servomotores, un módulo Bluetooth y una aplicación móvil para resolver un cubo Rubik. A través de la aplicación, el usuario ingresará manualmente la disposición de colores en el cubo, enviando esta disposición al Arduino para que el robot ejecute movimientos y resuelva el cubo.
@@ -38,7 +38,6 @@ Este robot utiliza un Arduino Uno, servomotores, un módulo Bluetooth y una apli
      - **GND** del módulo Bluetooth al **GND** del Arduino.
      - **RX** del módulo al pin **TX** del Arduino.
      - **TX** del módulo al pin **RX** del Arduino.
-   - Configura el módulo en modo de emparejamiento: el módulo normalmente parpadea rápidamente cuando está listo para conectarse a un dispositivo.
 
 5. **Conexión de los servomotores al Arduino**
    - **Servo 1**: Conecta el cable de señal al pin digital **9** del Arduino.
@@ -58,11 +57,11 @@ Este robot utiliza un Arduino Uno, servomotores, un módulo Bluetooth y una apli
 
 1. **Diseño de la interfaz**
    - **Interfaz del cubo Rubik**:
-     - Crea seis áreas en la app, una por cada cara del cubo. Cada cara se compondrá de **9 botones** en una disposición de 3x3, que representarán los cuadrados del cubo.
-     - Estos botones cambiarán de color según el color seleccionado por el usuario.
+     - Crea seis áreas en la app, una por cada cara del cubo. Cada cara se compondrá de **9 botones**, que representarán los cuadrados del cubo.
+     - Estos botones cambiarán de color según lo que elija el usuario.
    
    - **Selector de colores**:
-     - Agrega seis botones para seleccionar colores (blanco, rojo, azul, verde, amarillo y naranja).
+     - Agrega seis botones para seleccionar colores (rojo, verde, azul, amarillo, naranja, blanco).
      - Cuando el usuario seleccione un color, guárdalo en una variable para cambiar el color de los botones de la cara del cubo.
 
    - **Botón para enviar disposición**:
@@ -70,21 +69,14 @@ Este robot utiliza un Arduino Uno, servomotores, un módulo Bluetooth y una apli
 
 2. **Configuración de comportamiento en App Inventor**
    - **Cambio de color de los botones del cubo**:
-     - Usa el bloque de eventos `Button.Click` para cambiar el color de cada botón. Al hacer clic en un botón, cambia el color del botón al color seleccionado y guarda el color en una lista `disposicionCubo`.
+     - Usa el bloque de eventos `Button.Click` para cambiar el color de cada botón. Al hacer clic en un botón, cambia el color del botón al color seleccionado y guarda el color en una lista `dispoCubo`.
 
 3. **Conexión Bluetooth**
    - En el componente `BluetoothClient`, utiliza el bloque `BluetoothClient.Connect` y coloca la dirección MAC del módulo Bluetooth para conectar el dispositivo.
    - Verifica la conexión usando el bloque `BluetoothClient.IsConnected`.
 
 4. **Envío de datos a Arduino**
-   - Al presionar el botón de envío, convierte la lista `disposicionCubo` en una cadena de texto usando `list to csv row` y usa `BluetoothClient.SendText` para enviar el texto al Arduino.
+   - Al presionar el botón de envío, convierte la lista `dispoCubo` en una cadena de texto usando `list to csv row` y usa `BluetoothClient.SendText` para enviar el texto al Arduino.
 
 ---
 
-### Consejos prácticos
-
-- **Pruebas de movimiento**: Antes de enviar todos los datos del cubo, prueba con movimientos simples para verificar que los servos giren correctamente.
-- **Optimización de conexión Bluetooth**: Empareja el módulo con el teléfono móvil y realiza pruebas de conexión desde la app móvil.
-- **Estabilización de voltaje**: Asegúrate de que los capacitores están bien conectados para evitar fluctuaciones que puedan dañar los componentes.
-
-Este tutorial ofrece una guía para ensamblar y programar tu propio robot resolutor de cubos Rubik. Mucha suerte!
