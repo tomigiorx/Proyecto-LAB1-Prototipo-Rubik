@@ -1,4 +1,4 @@
-### 1. Instala el Software Arduino IDE
+### 1. Instalar el Software Arduino IDE
 - Ir al sitio web de Arduino: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software).
 - Descarga la versión compatible con tu sistema operativo.
 - Sigue las instrucciones de instalación.
