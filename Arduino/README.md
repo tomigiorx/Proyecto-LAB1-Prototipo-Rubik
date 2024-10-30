@@ -19,8 +19,12 @@
 ### 5. Compila tu Código
 - Para verificar que el código no contenga ningún erorr, hacer clic en el icono de **Verificar** en la parte superior izquierda de la ventana del IDE.
 
+![image](https://github.com/user-attachments/assets/c9e3d440-e6ba-46f4-b806-029ddd5b3281)
+
 ### 6. Subir el código a la placa
 - Una vez compilado sin errores, haz clic en el botón **Subir** (ícono de flecha apuntando a la derecha).
+  ![image](https://github.com/user-attachments/assets/ef76b4c9-b600-4b01-a6e0-e3d0fe4694fa)
+
 - El IDE cargará el código en la placa Arduino. Se mostrará un mensaje "Subido" en la parte inferior del IDE.
 
 ### 7. Verifica la Ejecución
