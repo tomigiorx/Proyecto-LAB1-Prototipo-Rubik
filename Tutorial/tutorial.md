@@ -51,34 +51,7 @@ Este robot utiliza un Arduino Uno, servomotores, un módulo Bluetooth y una apli
 
 1. **Configuración del código para controlar los servos y la conexión Bluetooth**
 
-   Abre el IDE de Arduino y copia el siguiente código de configuración:
-
-   ```cpp
-   #include <Servo.h>
-
-   Servo servo1;  // Servo que controla la rotación de una cara del cubo
-   Servo servo2;  // Servo que controla la rotación de la base
-
-   void setup() {
-       Serial.begin(9600);          // Inicia la comunicación Bluetooth
-       servo1.attach(9);             // Conecta el primer servo al pin 9
-       servo2.attach(10);            // Conecta el segundo servo al pin 10
-   }
-
-   void loop() {
-       if (Serial.available() > 0) {
-           String data = Serial.readStringUntil('\n');  // Lee la disposición del cubo desde la app
-           interpretarMovimiento(data);                // Ejecuta movimientos según los datos recibidos
-       }
-   }
-
-   void interpretarMovimiento(String data) {
-       // Decodifica la disposición del cubo y ejecuta movimientos en los servos
-   }
-   ```
-
-   - **Nota**: La función `interpretarMovimiento` debe programarse para decodificar la disposición del cubo en movimientos específicos para los servos. Considera usar delays entre movimientos para evitar sobrecalentar los servos.
-
+   Abre el IDE de Arduino y copia el código brindado en la carpeta "Arduino/codigo_c++".
 ---
 
 ### Parte 3: Creación de la aplicación en MIT App Inventor
