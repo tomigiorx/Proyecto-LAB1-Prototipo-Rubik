@@ -1,7 +1,7 @@
 # Proyecto LAB1 - Prototipo: Logic-3
 Este proyecto consiste en una aplicación desarrollada en MIT App Inventor para simular y controlar la resolución de un cubo Rubik 3x3x3 mediante un robot operado con Arduino. La aplicación permite al usuario ingresar manualmente la configuración de colores del cubo y luego enviar esta información al robot a través de Bluetooth, quien se encargará de resolverlo utilizando una serie de movimientos automatizados.
 
-![image](https://github.com/user-attachments/assets/0a5a45a2-cf23-4e8a-bb00-610a2652e635)
+![image](https://github.com/user-attachments/assets/7aa64fd6-4d45-4df2-86e9-2c894aa654de)
 
 ## Características
 * **Interfaz de usuario en MIT App Inventor:** la aplicación incluye una interfaz visual donde el usuario puede seleccionar los colores de cada cara del cubo Rubik. Cada cara del cubo se muestra en la pantalla como una cuadrícula de 3x3, permitiendo al usuario tocar cada cuadrado y asignarle un color.
